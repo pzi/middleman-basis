@@ -1,0 +1,9 @@
+%header{role: "banner"}
+  %h1= link_to "Middleman Basis", "/", rel: "home"
+
+  %nav{role: "navigation"}
+    %h2
+      Navigation
+    %ul
+      %li{nav_active("page.html")}
+        = link_to "Sample page", "page.html"

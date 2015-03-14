@@ -1,0 +1,64 @@
+!!! 5
+/[if IE 8]      <html class="no-js lt-ie10 lt-ie9 ie8" lang="en-us">
+/[if IE 9]      <html class="no-js lt-ie10 ie9" lang="en-us">
+/[if gt IE 9]   <html class="no-js" lang="en-us">
+/[if !IE]>
+%html(lang="en" class="no-js")
+  /<![endif]
+  %head
+    %meta{charset: "utf-8"}
+
+    %title= render_page_title(data.page.title, current_resource.url)
+    %meta{name: "description", content: data.page.meta_description || site_title}
+    %meta{name: "keywords", content: data.page.meta_keywords || site_title}
+
+    -# TODO: replace with config setting
+    %meta{name: "author", content: "REPLACE ME"}
+
+    -# Generated Geo-Tags: http://www.geo-tag.de/generator
+    %meta{name: "DC.title", content: render_page_title(data.page.title, current_resource.url)}
+    -# %meta{name: "geo.region", content: "XX-XX"}
+    -# %meta{name: "geo.placename", content: "XXXXX"}
+    -# %meta{name: "geo.position", content: "XXXX;XXXX"}
+    -# %meta{name: "ICBM", content: "XXXX XXXX"}
+
+    -# Standard viewport tag to set the viewport to the device's width,
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
+    -# Stylesheets
+    = stylesheet_link_tag 'styles'
+
+    %link{rel: "author", href: "humans.txt"}
+
+    -# App Icons
+    %link{rel: "shortcut icon", href: "favicon.ico"}
+
+    /[if lte IE 8]
+      -# Loading fallback scripts from a CDN for older IE versions could be beneficial
+      -# as it may have been cached by the browser before
+
+      -# html5shiv (don't include it in modernizr)
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+
+      -# Respond.js (responsive styles for old browsers)
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+
+    - if build?
+      -# Google Analytics
+      = partial "shared/analytics"
+
+  %body{class: current_page.data.body_classes || "page"}
+    /[if lte IE 8]
+      %p.browser-upgrade<>
+        You are using an
+        %strong outdated
+        browser. Please
+        = link_to "upgrade your browser", "http://browsehappy.com/", rel: "external", target: "_blank"
+        to improve your experience.
+
+    = partial "layouts/header"
+    = yield
+    = partial "layouts/footer"
+
+    -# Load all Javascript at the end to avoid render-blocking
+    = javascript_include_tag "scripts"
