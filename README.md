@@ -17,7 +17,6 @@ The Basis for building a good website. Middleman Basis uses:
 * Modernizr.js
 * Normalize.css
 * Search Engine Sitemap
-* ImageOptim
 
 ## Getting Started
 
@@ -50,6 +49,7 @@ bundle && bower install
 
 * Make use of config settings/file
 * GitHub page
+* Use middleman-imageoptim
 
 ## License
 
