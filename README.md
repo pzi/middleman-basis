@@ -24,24 +24,24 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 1. Install **middleman-basis** as Middleman template.
 
-```bash
-git clone https://github.com/pzi/middleman-basis.git ~/.middleman/middleman-basis
-```
+    ```bash
+    git clone https://github.com/pzi/middleman-basis.git ~/.middleman/middleman-basis
+    ```
 
 2.  Initialize a new Middleman project with the **middleman-basis** template
 
-```bash
-middleman init project_name --template=middleman-basis
-cd project_name
-rm -rf .git/
-git init
-```
+    ```bash
+    middleman init project_name --template=middleman-basis
+    cd project_name
+    rm -rf .git/
+    git init
+    ```
 
 3. Install Gems and Bower packages
 
-```bash
-bundle && bower install
-```
+    ```bash
+    bundle && bower install
+    ```
 
 4. Run `middleman`
 
