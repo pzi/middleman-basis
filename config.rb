@@ -88,7 +88,7 @@ activate :directory_indexes
 set :file_watcher_ignore,[
     /^bin(\/|$)/,
     /^\.bundle(\/|$)/,
-    # /^vendor(\/|$)/,
+    /^vendor\/?((bundle)|$)/,
     /^node_modules(\/|$)/,
     /^\.sass-cache(\/|$)/,
     /^\.cache(\/|$)/,
