@@ -5,18 +5,21 @@
  * [middleman][middleman-url]
  * [bower][bower-url]
 
+
 ### Description
 
 The Basis for building a good website. Middleman Basis uses:
 
 * COMPASS
-* HAML
-* SASS
+* Haml
+* Sass
 * CoffeeScript
 * Bower
 * Modernizr.js
 * Normalize.css
 * Search Engine Sitemap
+* ImageOptim
+
 
 ## Getting Started
 
@@ -39,11 +42,21 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 4. Run `middleman`
 
+
+### Optional
+
+By default, **middleman-basis** only uses `middleman-smusher` to compress images. If you take image compression and optimisation serious, you will want to use [`middleman-imageoptim`](https://github.com/plasticine/middleman-imageoptim).
+
+To make use of `middleman-imageoptim`, you will have to [set up external utilities](https://github.com/toy/image_optim).
+
+Once you have those tools, you can enable (uncomment it) in `config.rb`.
+
+
 ## TODO
 
 * Make use of config settings/file
 * GitHub page
-* Use middleman-imageoptim
+
 
 ## License
 
