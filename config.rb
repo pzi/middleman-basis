@@ -103,15 +103,15 @@ configure :build do
     remove_input_attributes: false
   }
 
-  # Compress PNGs after build
+  # Compress images (default)
   require "middleman-smusher"
   activate :smusher
 
-  # Compress and optimise all images
-  # Requires homebrew to install additional software
-  # Before activing the below, run:
-  #   brew install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush
-  # activate :imageoptim
+  # Compress ALL images (advanced)
+  # Before activating the below, follow setup instructions on https://github.com/toy/image_optim
+  # activate :imageoptim do |options|
+  #   options.pngout = false # set to true when pngout is also installed
+  # end
 
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
