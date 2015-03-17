@@ -1,5 +1,8 @@
 # Middleman Basis
 
+[![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=develop)](https://travis-ci.org/pzi/middleman-basis)
+
+
 ## General Information
 
  * [middleman][middleman-url]
