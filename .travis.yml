@@ -1,4 +1,10 @@
 language: ruby
+
 rvm:
   - 2.1.2
+
+before_script:
+  - npm install -g bower
+  - bower install
+
 script: bundle exec middleman build
