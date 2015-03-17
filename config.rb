@@ -63,7 +63,7 @@ activate :livereload
 
 # Use Search Engine Sitemap
 set :url_root, 'http://www.example.com'
-# activate :search_engine_sitemap
+activate :search_engine_sitemap
 
 # User Bower to manage vendor scripts
 activate :bower
