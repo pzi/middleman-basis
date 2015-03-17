@@ -7,4 +7,4 @@ before_script:
   - npm install -g bower
   - bower install
 
-script: bundle exec middleman build
+script: bundle exec middleman build --verbose
