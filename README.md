@@ -49,7 +49,7 @@ By default, **middleman-basis** only uses `middleman-smusher` to compress images
 
 To make use of `middleman-imageoptim`, you will have to [set up external utilities](https://github.com/toy/image_optim).
 
-Once you have those tools, you can enable (uncomment it) in `config.rb`.
+Once you have those tools, you can enable (uncomment it) in [`config.rb`](https://github.com/pzi/middleman-basis/blob/develop/config.rb#L112).
 
 
 ## TODO
