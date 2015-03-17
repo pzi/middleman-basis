@@ -33,15 +33,9 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
     ```bash
     middleman init project_name --template=middleman-basis
     cd project_name
-    rm -rf .git/
-    git init
     ```
 
-3. Install Gems and Bower packages
-
-    ```bash
-    bundle && bower install
-    ```
+3. Install Bower packages: `bower install`
 
 4. Run `middleman`
 
