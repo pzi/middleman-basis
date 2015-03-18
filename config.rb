@@ -85,23 +85,23 @@ activate :directory_indexes
 # Overwrite from https://www.omniref.com/ruby/gems/middleman-core/3.3.10/symbols/Middleman::CoreExtensions::FileWatcher::API#line=23
 # Due to build issue reported here:
 # https://github.com/Aupajo/middleman-search_engine_sitemap/issues/2
-set :file_watcher_ignore,[
-    /^bin(\/|$)/,
-    /^\.bundle(\/|$)/,
-    # /^vendor\/?((bundle)|$)/,
-    /^node_modules(\/|$)/,
-    /^\.sass-cache(\/|$)/,
-    /^\.cache(\/|$)/,
-    /^\.git(\/|$)/,
-    /^\.gitignore$/,
-    /\.DS_Store/,
-    /^\.rbenv-.*$/,
-    /^Gemfile$/,
-    /^Gemfile\.lock$/,
-    /~$/,
-    /(^|\/)\.?#/,
-    /^tmp\//
-  ]
+# set :file_watcher_ignore,[
+#     /^bin(\/|$)/,
+#     /^\.bundle(\/|$)/,
+#     # /^vendor\/?((bundle)|$)/,
+#     /^node_modules(\/|$)/,
+#     /^\.sass-cache(\/|$)/,
+#     /^\.cache(\/|$)/,
+#     /^\.git(\/|$)/,
+#     /^\.gitignore$/,
+#     /\.DS_Store/,
+#     /^\.rbenv-.*$/,
+#     /^Gemfile$/,
+#     /^Gemfile\.lock$/,
+#     /~$/,
+#     /(^|\/)\.?#/,
+#     /^tmp\//
+#   ]
 
 
 # --------------------------------------------------------------------------------------------------
