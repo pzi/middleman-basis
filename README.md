@@ -1,6 +1,6 @@
 # Middleman Basis
 
-[![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=develop)](https://travis-ci.org/pzi/middleman-basis)
+[![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=master)](https://travis-ci.org/pzi/middleman-basis)
 [![Donate Bitcoins](https://www.coinbase.com/assets/buttons/donation_small.png)](https://www.coinbase.com/checkouts/e01471f6102ffb787ea81c6f8e5e922c)
 
 
