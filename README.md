@@ -44,7 +44,9 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 3. Install Bower packages: `bower install`
 
-4. Run `middleman`
+4. Install required gems: `bundle exec install`
+
+5. Run `middleman`
 
 
 ### Optional
