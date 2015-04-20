@@ -8,7 +8,7 @@
   %head
     %meta{charset: "utf-8"}
 
-    %title= render_page_title(data.page.title, current_resource.url)
+    %title= render_page_title
     %meta{name: "description", content: data.page.meta_description || site_title}
     %meta{name: "keywords", content: data.page.meta_keywords || site_title}
 
@@ -16,7 +16,7 @@
     %meta{name: "author", content: "REPLACE ME"}
 
     -# Generated Geo-Tags: http://www.geo-tag.de/generator
-    %meta{name: "DC.title", content: render_page_title(data.page.title, current_resource.url)}
+    %meta{name: "DC.title", content: render_page_title}
     -# %meta{name: "geo.region", content: "XX-XX"}
     -# %meta{name: "geo.placename", content: "XXXXX"}
     -# %meta{name: "geo.position", content: "XXXX;XXXX"}

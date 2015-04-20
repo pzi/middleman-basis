@@ -7,7 +7,7 @@
     "url": "http://patrikaffentranger.me"
   },
   "license": "MIT",
-  "homepage": "http://patrikaffentranger.me",
+  "homepage": "https://github.com/pzi/middleman-basis",
   "private": true,
   "ignore": [
     "**/.*",
