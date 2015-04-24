@@ -5,11 +5,11 @@ module PageTitleHelper
   #   3) The title of each page
 
   def site_title
-    "Middleman Basis"
+    data.config.site.title
   end
 
   def title_separator
-    " &mdash; "
+    data.config.site.title_separator
   end
 
   def render_page_title
