@@ -2,8 +2,8 @@
 # The "humans" responsible & technology colophon
 
 /* TEAM */
-  <% data.config.humans.each do |human_object| %>
-    <%= "#{human_object[1]['name']} - #{human_object[1]['role']}" %> <%= "(#{human_object[1]['contact']})" %>
+  <% data.config.humans.team.each do |team_obj| %>
+    <%= "<#{team_obj[1]['name']}> - #{team_obj[1]['role']} - <#{team_obj[1]['contact']}>" %>
   <% end %>
 
 /* THANKS */
@@ -13,7 +13,7 @@
 /* SITE */
 
     Last update: <%= Time.now.strftime("%F") %>
-    Language: English
+    Language: <%= data.config.humans.language %>
     Standards: CSS3, HTML5, JavaScript
     Components: Apache Server Configs, jQuery, Modernizr, Normalize.css, html5shiv
     Software: Sublime Text
