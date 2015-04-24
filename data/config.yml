@@ -9,15 +9,3 @@ source:
   author:
     name: Author Name
     uri: http://www.example.com
-
-humans:
-  team:
-    member_1:
-      name: Jane Doe
-      role: Example Role 1
-      contact: "@twitterhandle"
-    member_2:
-      name: John Doe
-      role: Example Role 2
-      contact: "mail@example.com"
-  language: English

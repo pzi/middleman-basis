@@ -2,18 +2,18 @@
 # The "humans" responsible & technology colophon
 
 /* TEAM */
-  <% data.config.humans.team.each do |team_obj| %>
-    <%= "<#{team_obj[1]['name']}> - #{team_obj[1]['role']} - <#{team_obj[1]['contact']}>" %>
+  <% data.humans.team.each do |member_obj| %>
+    <%= "<#{member_obj[1]['name']}> - #{member_obj[1]['role']} - <#{member_obj[1]['contact']}>" %>
   <% end %>
 
 /* THANKS */
-
-    <Credit> -- <http://www.example.com>
+  <% data.humans.shoutouts.each do |shoutout_obj| %>
+    <%= "<#{shoutout_obj[1]['name']}> -- <#{shoutout_obj[1]['contact']}>" %>
+  <% end %>
 
 /* SITE */
-
     Last update: <%= Time.now.strftime("%F") %>
-    Language: <%= data.config.humans.language %>
-    Standards: CSS3, HTML5, JavaScript
-    Components: Apache Server Configs, jQuery, Modernizr, Normalize.css, html5shiv
-    Software: Sublime Text
+    Language: <%= data.humans.languages.join(", ") %>
+    Standards: <%= data.humans.standards_used.join(", ") %>
+    Components: <%= data.humans.components_used.join(", ") %>
+    Software: <%= data.humans.software_used.join(", ") %>
