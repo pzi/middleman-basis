@@ -9,3 +9,13 @@ source:
   author:
     name: Author Name
     uri: http://www.example.com
+
+humans:
+  member_1:
+    name: Jane Doe
+    role: Example Role
+    contact: "@twitterhandle"
+  member_2:
+    name: John Doe
+    role: Example Role
+    contact: "@twitterhandle"

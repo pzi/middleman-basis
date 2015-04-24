@@ -2,9 +2,9 @@
 # The humans responsible & technology colophon
 
 /* TEAM */
-
-    <Jane Doe> - Role - <@twitterHandle>
-    <John Doe> - Role - <@twitterHandle>
+    <% data.config.humans.each_with_index do |member, i| %>
+      <%= member[i] %>
+    <% end %>
 
 /* THANKS */
 
