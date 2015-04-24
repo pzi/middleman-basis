@@ -1,10 +1,10 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# The "humans" responsible & technology colophon
 
 /* TEAM */
-    <% data.config.humans.each_with_index do |member, i| %>
-      <%= member[i] %>
-    <% end %>
+  <% data.config.humans.each do |human_object| %>
+    <%= "#{human_object[1]['name']} - #{human_object[1]['role']}" %> <%= "(#{human_object[1]['contact']})" %>
+  <% end %>
 
 /* THANKS */
 
