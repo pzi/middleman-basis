@@ -5,7 +5,7 @@
 
     %title= render_page_title
     %meta{name: "description", content: data.page.meta_description || data.config.site.meta_description}
-    %meta{name: "keywords", content: data.page.meta_keywords || data.config.site.meta_keywords}
+    %meta{name: "keywords", content: data.page.meta_keywords.join(",") || data.config.site.meta_keywords.join(",")}
     %meta{name: "author", content: data.config.site.author}
 
     -# Generated Geo-Tags: http://www.geo-tag.de/generator
