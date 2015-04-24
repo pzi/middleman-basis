@@ -1,3 +1,11 @@
 site:
   title: Middleman Basis
   title_separator: " &mdash; "
+  meta_description: Example description
+  meta_keywords: example, keyword
+  author: Example Author
+
+source:
+  author:
+    name: Author Name
+    uri: http://www.example.com
