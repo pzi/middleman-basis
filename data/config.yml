@@ -1,10 +1,15 @@
+# Site wide settings
 site:
+  root_url: http://www.example.com
   title: Middleman Basis
   title_separator: " &mdash; "
   meta_description: Example description
-  meta_keywords: example, keyword
+  meta_keywords:
+    - example
+    - keyword
   author: Example Author
 
+# Author of CSS & JavaScript
 source:
   author:
     name: Author Name
