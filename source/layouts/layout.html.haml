@@ -1,10 +1,5 @@
 !!! 5
-/[if IE 8]      <html class="no-js lt-ie10 lt-ie9 ie8" lang="en-us">
-/[if IE 9]      <html class="no-js lt-ie10 ie9" lang="en-us">
-/[if gt IE 9]   <html class="no-js" lang="en-us">
-/[if !IE]>
-%html(lang="en" class="no-js")
-  /<![endif]
+%html.no-js{lang: "en"}
   %head
     %meta{charset: "utf-8"}
 
