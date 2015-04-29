@@ -4,8 +4,8 @@
     %meta{charset: "utf-8"}
 
     %title= render_page_title
-    %meta{name: "description", content: data.page.meta_description || data.config.site.meta_description}
-    %meta{name: "keywords", content: data.page.meta_keywords.join(",") || data.config.site.meta_keywords.join(",")}
+    %meta{name: "description", content: meta_description}
+    %meta{name: "keywords", content: meta_keywords}
     %meta{name: "author", content: data.config.site.author}
 
     -# Generated Geo-Tags: http://www.geo-tag.de/generator
