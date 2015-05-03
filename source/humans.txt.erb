@@ -1,5 +1,5 @@
 # humanstxt.org/
-# The "humans" responsible & technology colophon
+# The humans responsible & technology colophon
 
 /* TEAM */
   <% data.humans.team.each do |member_obj| %>
@@ -7,9 +7,12 @@
   <% end %>
 
 /* THANKS */
-  <% data.humans.shoutouts.each do |shoutout_obj| %>
+<% if data.humans.shoutouts %>
+    <% data.humans.shoutouts.each do |shoutout_obj| %>
     <%= "<#{shoutout_obj[1]['name']}> -- <#{shoutout_obj[1]['contact']}>" %>
   <% end %>
+<% end %>
+    <Middleman Basis> -- <https://github.com/pzi/middleman-basis>
 
 /* SITE */
     Last update: <%= Time.now.strftime("%F") %>
