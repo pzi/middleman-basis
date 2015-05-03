@@ -8,6 +8,7 @@ site:
     - example
     - keyword
   author: Example Author
+  analytics_id: UA-XXXXXXX-XX
 
 # Author of CSS & JavaScript
 source:
