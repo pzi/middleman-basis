@@ -8,6 +8,8 @@
 
  * [middleman][middleman-url]
  * [bower][bower-url]
+ * [humans.txt][humanstxt-url]
+ * [ImageOptim][imageoptim-url]
 
 
 ### Description
@@ -23,6 +25,7 @@ The Basis for building a good website. Middleman Basis uses:
 * Normalize.css
 * Search Engine Sitemap
 * ImageOptim
+* Humans.txt
 
 
 ## Getting Started
@@ -67,9 +70,9 @@ It's **important** that these 2 files get updated accordingly! It'd be unfortuna
 
 By default, **middleman-basis** only uses `middleman-smusher` to compress images. If you take image compression and optimisation serious, you will want to use [`middleman-imageoptim`](https://github.com/plasticine/middleman-imageoptim).
 
-To make use of `middleman-imageoptim`, you will have to [set up external utilities](https://github.com/toy/image_optim).
+To make use of `middleman-imageoptim`, you will have to [set up external utilities][imageoptim-url].
 
-Once you have those tools, you can enable (uncomment it) in [`config.rb`](https://github.com/pzi/middleman-basis/blob/develop/config.rb#L112).
+Once you have those tools, you can enable (uncomment it) in [`config.rb`][imageoptim-config].
 
 
 ## TODO
@@ -87,4 +90,7 @@ Once you have those tools, you can enable (uncomment it) in [`config.rb`](https:
 [nodejs-url]: http://nodejs.org/
 [middleman-url]: http://middlemanapp.com/
 [pzi-url]: http://patrikaffentranger.me
+[humanstxt-url]: http://humanstxt.org/
 [middleman-data-files]: https://middlemanapp.com/advanced/data_files/
+[imageoptim-url]: https://github.com/toy/image_optim
+[imageoptim-config]: config.rb#L66
