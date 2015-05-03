@@ -1,17 +1,14 @@
 # humans.txt content - more information here: http://humanstxt.org/
 team:
-  member_1:
-    name: Jane Doe
+  - name: Jane Doe
     role: Example Role 1
     contact: "@twitterhandle"
-  member_2:
-    name: John Doe
+  - name: John Doe
     role: Example Role 2
     contact: "http://www.example.com"
 
 shoutouts:
-  shoutout_1:
-    name: Example company
+  - name: Example company
     contact: http://www.example.com
 
 languages:
