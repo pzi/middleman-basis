@@ -77,8 +77,11 @@ Once you have those tools, you can enable (uncomment it) in [`config.rb`][imageo
 
 ## TODO
 
-* Make use of config settings/file
 * GitHub page
+* Update Gems
+* More/better documentation
+* Better spin-up instruction/how to use it as a template
+* Remove jQuery by default
 
 
 ## License
