@@ -18,7 +18,7 @@
 
 /* SITE */
     Last update: <%= Time.now.strftime("%F") %>
-    Language: <%= data.humans.languages.join(", ") %>
-    Standards: <%= data.humans.standards_used.join(", ") %>
-    Components: <%= data.humans.components_used.join(", ") %>
-    Software: <%= data.humans.software_used.join(", ") %>
+    <%= "Language: #{data.humans.languages.join(", ")}" if data.humans.languages %>
+    <%= "Standards: #{data.humans.standards_used.join(", ")}" if data.humans.standards_used %>
+    <%= "Components: #{data.humans.components_used.join(", ")}" if data.humans.components_used %>
+    <%= "Software: #{data.humans.software_used.join(", ")}" if data.humans.software_used %>
