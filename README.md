@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=master)](https://travis-ci.org/pzi/middleman-basis)
 
+    Basis comes with a bare minimum of pre-installs, ready for you to take it to the next level.
+    It is literally, the Basis for building a good, performant website.
+
 
 ## General Information
 
@@ -53,11 +56,11 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 ### Make it your own!
 
-After you have successfully installed Middleman Basis for your new project, it's time to make it your own. You have the entire Middleman-Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
+After you have successfully setup the template for your new project, it's time to make it your own. You have the entire Middleman Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
 
 #### Customizing defaults
 
-Middleman Basis makes use [Data Files][middleman-data-files]. By default, the template comes with 2 data files:
+Middleman Basis makes use of [Data Files][middleman-data-files]. By default, the template comes with 2 data files:
 
 1. [config.yml](data/config.yml) – a place for sitewide content
 2. [humans.yml](data/humans.yml) – a *simpler* way to add content to [humans.txt][humanstxt-url]
