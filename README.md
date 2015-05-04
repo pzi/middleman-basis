@@ -56,7 +56,7 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 ### Make it your own!
 
-After you have successfully setup the template for your new project, it's time to make it your own. You have the entire Middleman Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
+After you have successfully set up the template for your new project, it's time to make it your own. You have the entire Middleman Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
 
 #### Customizing defaults
 

@@ -1,6 +1,6 @@
 module MetaTagHelper
-  # Sets the page meta description and keywords which can be composed by either
-  #   a) data in config.yml (which is site-wide), or
+  # Sets the page meta description and keywords, which can be composed by either
+  #   a) data in config.yml (which is sitewide), or
   #   b) data set in the FrontMatter of each page
 
   def meta_keywords
@@ -14,7 +14,7 @@ module MetaTagHelper
     end
 
     if keywords.is_a?(String)
-      # Props to @jordanmaguire for the help on this
+      # Thanks to @jordanmaguire for the help on this
       keywords = keywords.split(",").map(&:strip)
     end
 
