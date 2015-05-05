@@ -1,19 +1,24 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
+<% if data.humans.team %>
 /* TEAM */
-
-    <Jane Doe> - Role - <@twitterHandle>
-    <John Doe> - Role - <@twitterHandle>
+  <% data.humans.team.each do |member| %>
+    <%= "<#{member.name}> - #{member.role} - <#{member.contact}>" %>
+  <% end %>
+<% end %>
 
 /* THANKS */
-
-    <Credit> -- <http://www.example.com>
+<% if data.humans.shoutouts %>
+    <% data.humans.shoutouts.each do |shoutout| %>
+    <%= "<#{shoutout.name}> -- <#{shoutout.contact}>" %>
+  <% end %>
+<% end %>
+    <Middleman Basis> -- <https://github.com/pzi/middleman-basis>
 
 /* SITE */
-
     Last update: <%= Time.now.strftime("%F") %>
-    Language: English
-    Standards: CSS3, HTML5, JavaScript
-    Components: Apache Server Configs, jQuery, Modernizr, Normalize.css, html5shiv
-    Software: Sublime Text
+    <%= "Language: #{data.humans.languages.join(", ")}" if data.humans.languages %>
+    <%= "Standards: #{data.humans.standards_used.join(", ")}" if data.humans.standards_used %>
+    <%= "Components: #{data.humans.components_used.join(", ")}" if data.humans.components_used %>
+    <%= "Software: #{data.humans.software_used.join(", ")}" if data.humans.software_used %>

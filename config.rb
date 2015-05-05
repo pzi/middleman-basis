@@ -16,7 +16,7 @@ end
 activate :livereload
 
 # Use Search Engine Sitemap
-set :url_root, 'http://www.example.com'
+set :url_root, data.config.site.root_url
 activate :search_engine_sitemap
 
 # User Bower to manage vendor scripts

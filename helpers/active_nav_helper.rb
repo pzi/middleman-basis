@@ -11,7 +11,7 @@ module ActiveNavHelper
 
 
   def active_navigation_item_class
-    "current"
+    data.config.site.active_navigation_item_class
   end
 
   def nav_active(url)

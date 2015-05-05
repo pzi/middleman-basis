@@ -1,0 +1,18 @@
+# Site wide settings
+site:
+  root_url: http://www.example.com
+  title: Middleman Basis
+  title_separator: " &mdash; "
+  meta_description: Example description
+  meta_keywords:
+    - example
+    - keyword
+  author: Example Author
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author:
+    name: Author Name
+    uri: http://www.example.com

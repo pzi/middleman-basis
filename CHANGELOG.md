@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.0
+
+Date: 2015-05-4
+
+Changes:
+  - Introduced [Data Files](https://middlemanapp.com/advanced/data_files/) – from now on sitewide information can be stored in `config.yml`. As a bonus, humans.txt data also lives in its yml file (`humans.yml`).
+  - Refactored helpers to make use of the data files, too.
+  - Meta tag helpers now scream at you, in case you are doing it wrong ;) (thanks @jordanmaguire for the help)
+  - Updated README with all the new goodies and information
+
 ## v0.3.1
 
 Date: 2015-04-29

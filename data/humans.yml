@@ -1,0 +1,30 @@
+# humans.txt content - more information here: http://humanstxt.org/
+team:
+  - name: Jane Doe
+    role: Example Role 1
+    contact: "@twitterhandle"
+  - name: John Doe
+    role: Example Role 2
+    contact: "http://www.example.com"
+
+shoutouts:
+  - name: Example company
+    contact: http://www.example.com
+
+languages:
+  - English
+
+standards_used:
+  - CSS3
+  - HTML5
+  - JavaScript
+
+components_used:
+  - Apache Server Configs
+  - jQuery
+  - Modernizr
+  - Normalize.css
+  - html5shiv
+
+software_used:
+  - Sublime Text

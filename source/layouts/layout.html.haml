@@ -4,11 +4,9 @@
     %meta{charset: "utf-8"}
 
     %title= render_page_title
-    %meta{name: "description", content: data.page.meta_description || site_title}
-    %meta{name: "keywords", content: data.page.meta_keywords || site_title}
-
-    -# TODO: replace with config setting
-    %meta{name: "author", content: "REPLACE ME"}
+    %meta{name: "description", content: meta_description}
+    %meta{name: "keywords", content: meta_keywords}
+    %meta{name: "author", content: data.config.site.author}
 
     -# Generated Geo-Tags: http://www.geo-tag.de/generator
     %meta{name: "DC.title", content: render_page_title}
@@ -23,7 +21,7 @@
     -# Stylesheets
     = stylesheet_link_tag 'styles'
 
-    %link{rel: "author", href: "humans.txt"}
+    %link{rel: "author", href: "/humans.txt"}
 
     -# App Icons
     %link{rel: "shortcut icon", href: "favicon.ico"}
