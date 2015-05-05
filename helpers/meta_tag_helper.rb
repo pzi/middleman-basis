@@ -41,6 +41,8 @@ module MetaTagHelper
       raise RuntimeError, "You must provide a meta description for your site/page!"
     elsif description.length > 160
       raise RuntimeError, "Meta description too long! Should be between 150-160 characters. You have: #{description.length}"
+    else
+      description
     end
   end
 end
