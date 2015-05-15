@@ -167,4 +167,3 @@ DEPENDENCIES
   middleman-minify-html
   middleman-search_engine_sitemap
   middleman-smusher
-  middleman-sprockets
