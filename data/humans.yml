@@ -21,7 +21,6 @@ standards_used:
 
 components_used:
   - Apache Server Configs
-  - jQuery
   - Modernizr
   - Normalize.css
   - html5shiv
