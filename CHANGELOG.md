@@ -1,8 +1,17 @@
 # Changelog
 
+## v0.5.0
+
+Date: 2015-06-04
+
+Changes:
+  - Updated all dependencies and the Ruby version
+  - Removed jQuery from default setup
+  - Removed image `srcset` attribute helper as middleman provides it's own from [v3.3.11](https://github.com/middleman/middleman/blob/v3-stable/CHANGELOG.md#3311)
+
 ## v0.4.0
 
-Date: 2015-05-4
+Date: 2015-05-04
 
 Changes:
   - Introduced [Data Files](https://middlemanapp.com/advanced/data_files/) – from now on sitewide information can be stored in `config.yml`. As a bonus, humans.txt data also lives in its yml file (`humans.yml`).
