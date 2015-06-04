@@ -10,7 +10,6 @@
   "homepage": "https://github.com/pzi/middleman-basis",
   "private": true,
   "dependencies": {
-    "jquery": "<2.0.0",
     "normalize.css": "~3.0.2"
   }
 }

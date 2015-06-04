@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem "middleman-sprockets"
 gem "middleman"
 gem "middleman-bower"
 gem "middleman-livereload"
