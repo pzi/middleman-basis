@@ -1,6 +1,6 @@
 {
   "name": "middleman-basis",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Middleman Basis - The foundation for any middleman site.",
   "author": {
     "name": "Patrik Affentranger",
@@ -10,6 +10,6 @@
   "homepage": "https://github.com/pzi/middleman-basis",
   "private": true,
   "dependencies": {
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.3"
   }
 }
