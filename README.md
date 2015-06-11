@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=master)](https://travis-ci.org/pzi/middleman-basis)
 
-> Basis comes with a bare minimum of pre-installs, ready for you to take it to the next level.
-> It is literally, the Basis for building a good, performant website.
+> Basis comes with a bare minimum of pre-installs, ready for you to take it to the next level. 
+It is literally, the Basis for building a good, performant website.
 
 
 ## General Information
@@ -49,7 +49,7 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 3. Install Bower packages: `bower install`
 
-4. Install required gems: `bundle exec install`
+4. Install required gems: `bundle install`
 
 5. Run `middleman`
 
