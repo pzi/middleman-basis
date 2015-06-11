@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Bower dependencies
+bower install
+
+# Ruby dependencies
+bundle install
