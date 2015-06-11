@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.5.1
+
+Date: 2015-06-11
+
+Changes:
+  - Renamed `_analytics` partial to `_google_analytics`
+  - Minor fixes in [README](README.md)
+
 ## v0.5.0
 
 Date: 2015-06-04
