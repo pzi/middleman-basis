@@ -47,16 +47,14 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
     cd project_name
     ```
 
-3. Install Bower packages: `bower install`
-
-4. Install required gems: `bundle install`
+3. Run `source bin/setup`
 
 5. Run `middleman`
 
 
 ### Make it your own!
 
-After you have successfully set up the template for your new project, it's time to make it your own. You have the entire Middleman Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
+After you have successfully set up the template for your new project, it's time to make it your own. So please, go ahead and remove files and/or change the content of them, according to your project's needs (especially this README).
 
 #### Customizing defaults
 
@@ -81,7 +79,6 @@ Once you have those tools, you can enable (uncomment it) in [`config.rb`][imageo
 
 * GitHub page
 * More/better documentation
-* Better spin-up instruction/how to use it as a template
 
 
 ## License
