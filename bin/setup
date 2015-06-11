@@ -34,4 +34,4 @@ echo "===== Thank you for using Middleman Basis!"
 echo ""
 
 # Self destruct
-rm -rf ./bin
+rm -r ./bin
