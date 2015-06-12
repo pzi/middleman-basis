@@ -2,11 +2,10 @@
 # Helpers
 # --------------------------------------------------------------------------------------------------
 
-helpers do
-  # Helpers are defined in and can be added to `helpers/custom_helpers.rb`.
-  # In case you require helpers within `config.rb`, they can be added here.
+Dir['helpers/**/*_helper.rb'].each do |file|
+  require file
+  helpers File.basename(file, ".rb").classify.constantize
 end
-
 
 # --------------------------------------------------------------------------------------------------
 # Extensions
@@ -27,10 +26,11 @@ activate :bower
 # Paths
 # --------------------------------------------------------------------------------------------------
 
-set :css_dir,     'stylesheets'
-set :fonts_dir,   'fonts'
-set :images_dir,  'images'
-set :js_dir,      'javascripts'
+set :css_dir,      'assets/stylesheets'
+set :js_dir,       'assets/javascripts'
+set :images_dir,   'assets/images'
+set :fonts_dir,    'assets/fonts'
+set :partials_dir, 'partials'
 
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
@@ -45,6 +45,8 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
 
+  activate :gzip
+
   # Minify CSS
   activate :minify_css
 
@@ -54,7 +56,9 @@ configure :build do
   # Minify HTML
   activate :minify_html, {
     remove_quotes: false,
-    remove_input_attributes: false
+    remove_input_attributes: false,
+    remove_http_protocol: false,
+    remove_https_protocol: false
   }
 
   # Compress images (default)
@@ -68,6 +72,5 @@ configure :build do
   # end
 
   # Uniquely-named assets (cache buster)
-  # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [/images\/(.*\.png|.*\.svg)/]
+  activate :asset_hash
 end
