@@ -1,19 +1,28 @@
 require 'rubygems'
 
-desc "Bower"
+desc "Bower dependencies"
 task :bower do
+  puts ">> Installing Bower dependencies"
   sh "bower install"
+  puts ""
 end
 
-desc "Clean"
+basis_files_to_delete = FileList.new("./CHANGELOG.md", "./LICENSE", "./.travis.yml")
+
+desc "Clean up project folder"
 task :clean do
-  sh "rm ./CHANGELOG.md"
-  sh "rm ./LICENSE"
-  sh "rm ./.travis.yml"
-  sh "echo 'Your new middleman project' > ./README.md"
+  puts ">> Removing unnecessary files"
+
+  # Remove middleman-basis specific files
+  FileUtils.rm basis_files_to_delete
+
+  # Overwrite middleman-basis README content
+  File.open("./README.md", 'w') { |file| file.write("# Your new Middleman project") }
+
+  puts ""
 end
 
-desc "Magic task to clean up and install all the things"
+desc "To be run after installing middleman-basis template"
 task :bootstrap => [:bower, :clean] do
-  sh "echo 'Magic'"
+  puts "Thank you for using Middleman Basis!"
 end
