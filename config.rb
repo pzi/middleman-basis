@@ -55,8 +55,10 @@ configure :build do
 
   # Minify HTML
   activate :minify_html, {
-    remove_quotes: false,
-    remove_input_attributes: false
+    remove_http_protocol: false,
+    remove_https_protocol: false,
+    remove_input_attributes: false,
+    remove_quotes: false
   }
 
   # Compress images (default)
