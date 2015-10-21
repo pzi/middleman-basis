@@ -45,6 +45,8 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
 
+  activate :gzip
+
   # Minify CSS
   activate :minify_css
 
