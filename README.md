@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/pzi/middleman-basis.svg?branch=master)](https://travis-ci.org/pzi/middleman-basis)
 
-> Basis comes with a bare minimum of pre-installs, ready for you to take it to the next level. 
+> Basis comes with a bare minimum of pre-installs, ready for you to take it to the next level.  
 It is literally, the Basis for building a good, performant website.
 
 
@@ -82,6 +82,21 @@ Once you have those tools, you can enable (uncomment it) in [`config.rb`][imageo
 * GitHub page
 * More/better documentation
 * Better spin-up instruction/how to use it as a template
+
+
+## Contributing
+
+1. Fork it
+2. `bower install && bundle install`
+3. Create your feature branch (`git checkout -b feature/my-new-feature`)
+4. Commit your changes (`git commit -am 'Added some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request
+
+
+## Changelog
+
+See [Changelog](CHANGELOG.md)
 
 
 ## License
