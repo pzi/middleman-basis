@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.5.2
+
+Date: 2015-10-22
+
+Changes:
+  - Updated all dependencies and the Ruby version
+  - Activated `automatic_image_sizes`
+  - Activated gzip in build process (thx @levibuzolic)
+  - Build no longer strips http(s) protocol (thx @levibuzolic)
+activate :automatic_image_sizes`
+  - Minor updates in [README](README.md)
+
 ## v0.5.1
 
 Date: 2015-06-11

@@ -22,6 +22,9 @@ activate :search_engine_sitemap
 # User Bower to manage vendor scripts
 activate :bower
 
+# Automatic image dimensions on image_tag helper (only works with local images)
+activate :automatic_image_sizes
+
 
 # --------------------------------------------------------------------------------------------------
 # Paths
@@ -45,6 +48,8 @@ configure :build do
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
 
+  activate :gzip
+
   # Minify CSS
   activate :minify_css
 
@@ -53,8 +58,10 @@ configure :build do
 
   # Minify HTML
   activate :minify_html, {
-    remove_quotes: false,
-    remove_input_attributes: false
+    remove_http_protocol: false,
+    remove_https_protocol: false,
+    remove_input_attributes: false,
+    remove_quotes: false
   }
 
   # Compress images (default)
