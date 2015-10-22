@@ -22,6 +22,9 @@ activate :search_engine_sitemap
 # User Bower to manage vendor scripts
 activate :bower
 
+# Automatic image dimensions on image_tag helper (only works with local images)
+activate :automatic_image_sizes
+
 
 # --------------------------------------------------------------------------------------------------
 # Paths
