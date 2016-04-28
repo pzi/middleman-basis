@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem "middleman"
+# middleman-basis is currently not compatible with middleman v4
+gem "middleman", '~> 3'
 gem "middleman-bower"
 gem "middleman-livereload"
 gem 'middleman-search_engine_sitemap'
