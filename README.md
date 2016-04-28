@@ -103,7 +103,7 @@ See [Changelog](CHANGELOG.md)
 
 **Middleman Basis** was created by [Patrik Affentranger][pzi-url] and is distributed under the [MIT license](LICENSE).
 
-[![Donate Bitcoins](https://www.coinbase.com/assets/buttons/donation_small.png)](https://www.coinbase.com/checkouts/e01471f6102ffb787ea81c6f8e5e922c)
+[Donate Bitcoins](https://www.coinbase.com/checkouts/e01471f6102ffb787ea81c6f8e5e922c)
 
 
 [bower-url]: http://bower.io/

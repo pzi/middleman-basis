@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.0.0
+
+Date: 2016-04-28
+
+Last version before the update to Middleman V4.
+
+Changes:
+  - **Breaking changes**: `middleman-basis` no longer supports Ruby v1.9.3 (as some of the dependencies also stopped supporting it)
+  - Updated all dependencies and the Ruby version
+  - `middleman-basis` only works for middleman v3.x.x versions for now
+  - Activate `debug_assets` in development to split up each require into its own script/style tag
+  - Always install latest version of `normalize.css` through Bower
+  - Minor updates in [README](README.md)
+
 ## v0.5.2
 
 Date: 2015-10-22
@@ -9,7 +23,6 @@ Changes:
   - Activated `automatic_image_sizes`
   - Activated gzip in build process (thx @levibuzolic)
   - Build no longer strips http(s) protocol (thx @levibuzolic)
-activate :automatic_image_sizes`
   - Minor updates in [README](README.md)
 
 ## v0.5.1
