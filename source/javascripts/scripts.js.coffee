@@ -1,7 +1,7 @@
 #= require vendor/modernizr
 
 document.onreadystatechange = ->
-  if document.readyState == "interactive"
+  if document.readyState == 'interactive'
 
     unless Modernizr?.svg
       endsWithDotSvg = /.*\.svg$/
