@@ -9,21 +9,20 @@ module ActiveNavHelper
   #
   #   {nav_active("page.html")}
 
-
   def active_navigation_item_class
     data.config.site.active_navigation_item_class
   end
 
   def nav_active(url)
-    if (url.instance_of? String)
+    if url.instance_of? String
       if current_resource.url == url_for(url)
-        {class: active_navigation_item_class}
+        { class: active_navigation_item_class }
       else
         {}
       end
-    elsif (url.instance_of? Array)
-      if url.map { |url| url_for(url) }.include?(current_resource.url)
-        {class: active_navigation_item_class}
+    elsif url.instance_of? Array
+      if url.map { |link| url_for(link) }.include?(current_resource.url)
+        { class: active_navigation_item_class }
       else
         {}
       end
