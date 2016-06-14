@@ -1,9 +1,10 @@
 language: ruby
 
 cache:
-  bundler: true
+  bundler: false
   directories:
     - vendor/assets/bower
+    - vendor/bundle
 
 rvm:
   - 2.2.3
