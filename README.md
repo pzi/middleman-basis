@@ -43,9 +43,12 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 2.  Initialize a new Middleman project with the **middleman-basis** template
 
     ```bash
-    middleman init project_name --template=middleman-basis
+    middleman init MY_PROJECT_FOLDER --template=middleman-basis
     cd project_name
     ```
+
+    In case you are using Middleman v4.x:
+    `middleman init MY_PROJECT_FOLDER -T pzi/middleman-basis`
 
 3. Install Bower packages: `bower install`
 
@@ -113,4 +116,4 @@ See [Changelog](CHANGELOG.md)
 [humanstxt-url]: http://humanstxt.org/
 [middleman-data-files]: https://middlemanapp.com/advanced/data_files/
 [imageoptim-url]: https://github.com/toy/image_optim
-[imageoptim-config]: config.rb#L66
+[imageoptim-config]: config.rb#L71-L73
