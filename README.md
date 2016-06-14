@@ -61,6 +61,7 @@ Before you get started, make sure you have [node.js][nodejs-url] & [Bower][bower
 
 After you have successfully set up the template for your new project, it's time to make it your own. You have the entire Middleman Basis repository as part of your new project, which includes a lot of files you won't need (e.g. `.travis.yml`, this version of the README etc.). So please, go ahead and remove files and/or change the content of them, according to your project's needs.
 
+
 #### Customizing defaults
 
 Middleman Basis makes use of [Data Files][middleman-data-files]. By default, the template comes with 2 data files:
@@ -71,9 +72,9 @@ Middleman Basis makes use of [Data Files][middleman-data-files]. By default, the
 It's **important** that these 2 files get updated accordingly! It'd be unfortunate if your project gets launched with "Example" content. If you follow the examples, it will speed up the entire spin up procedure.
 
 
-### Optional
+#### Optional
 
-By default, **middleman-basis** only uses `middleman-smusher` to compress images. If you take image compression and optimisation serious, you will want to use [`middleman-imageoptim`](https://github.com/plasticine/middleman-imageoptim).
+By default, **middleman-basis** only uses `middleman-smusher` to compress images. If you take image compression and optimisation serious, you will want to use [`middleman-imageoptim`][middleman-imageoptim].
 
 To make use of `middleman-imageoptim`, you will have to [set up external utilities][imageoptim-url].
 
@@ -99,7 +100,7 @@ Once you have those tools, you can enable (uncomment it) in [`config.rb`][imageo
 
 ## Changelog
 
-See [Changelog](CHANGELOG.md)
+See [Changelog](CHANGELOG.md).
 
 
 ## License
@@ -115,5 +116,6 @@ See [Changelog](CHANGELOG.md)
 [pzi-url]: http://patrikaffentranger.me
 [humanstxt-url]: http://humanstxt.org/
 [middleman-data-files]: https://middlemanapp.com/advanced/data_files/
+[middleman-imageoptim]: https://github.com/plasticine/middleman-imageoptim
 [imageoptim-url]: https://github.com/toy/image_optim
 [imageoptim-config]: config.rb#L71-L73
