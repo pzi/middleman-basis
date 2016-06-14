@@ -4,14 +4,7 @@ module MetaTagHelper
   #   b) data set in the FrontMatter of each page
 
   def meta_keywords
-    site_keywords = data.config.site.meta_keywords
-    page_keywords = data.page.meta_keywords
-
-    keywords = if page_keywords.blank?
-                 site_keywords
-               else
-                 page_keywords
-               end
+    keywords = set_meta_keywords
 
     if keywords.is_a?(String)
       # Thanks to @jordanmaguire for the help on this
@@ -28,26 +21,34 @@ module MetaTagHelper
   end
 
   def meta_description
-    site_description = data.config.site.meta_description
-    page_description = data.page.meta_description
+    description = set_description
 
-    description = if page_description.blank?
-                    site_description
-                  else
-                    page_description
-                  end
-
-    if description.blank?
-      raise 'You must provide a meta description for your site/page!'
-    end
+    raise 'You must provide a meta description for your site/page!' if description.blank?
 
     if description.length > 160
       description_too_long = 'Meta description too long!'
       description_too_long << ' Should be between 150-160 characters.'
       description_too_long << " You have: #{description.length}."
       raise description_too_long
+    end
+    description
+  end
+
+  private
+
+  def set_meta_keywords
+    if data.page.meta_keywords.blank?
+      data.config.site.meta_keywords
     else
-      description
+      data.page.meta_keywords
+    end
+  end
+
+  def set_description
+    if data.page.meta_description.blank?
+      data.config.site.meta_description
+    else
+      data.page.meta_description
     end
   end
 end
