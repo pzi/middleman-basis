@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0
+
+Date: 2016-06-14
+
+Changes:
+  - Started using Rubocop
+  - Refactored helpers
+  - Updated and improved Travis CI config
+  - Minor updates in [README](README.md)
+
 ## v1.0.0
 
 Date: 2016-04-28

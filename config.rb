@@ -7,7 +7,6 @@ helpers do
   # In case you require helpers within `config.rb`, they can be added here.
 end
 
-
 # --------------------------------------------------------------------------------------------------
 # Extensions
 # --------------------------------------------------------------------------------------------------
@@ -40,7 +39,6 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
-
 # --------------------------------------------------------------------------------------------------
 # Build configuration
 # --------------------------------------------------------------------------------------------------
@@ -59,15 +57,13 @@ configure :build do
   activate :minify_javascript
 
   # Minify HTML
-  activate :minify_html, {
-    remove_http_protocol: false,
-    remove_https_protocol: false,
-    remove_input_attributes: false,
-    remove_quotes: false
-  }
+  activate :minify_html, remove_http_protocol: false,
+                         remove_https_protocol: false,
+                         remove_input_attributes: false,
+                         remove_quotes: false
 
   # Compress images (default)
-  require "middleman-smusher"
+  require 'middleman-smusher'
   activate :smusher
 
   # Compress ALL images (advanced)
@@ -78,5 +74,5 @@ configure :build do
 
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [/images\/(.*\.png|.*\.svg)/]
+  activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
 end

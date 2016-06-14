@@ -4,45 +4,51 @@ module MetaTagHelper
   #   b) data set in the FrontMatter of each page
 
   def meta_keywords
-    site_keywords = data.config.site.meta_keywords
-    page_keywords = data.page.meta_keywords
-
-    if page_keywords.nil? || page_keywords.empty?
-      keywords = site_keywords
-    else
-      keywords = page_keywords
-    end
+    keywords = set_meta_keywords
 
     if keywords.is_a?(String)
       # Thanks to @jordanmaguire for the help on this
-      keywords = keywords.split(",").map(&:strip)
+      keywords = keywords.split(',').map(&:strip)
     end
 
-    if keywords.nil? || keywords.empty?
-      raise RuntimeError, "You must provide meta keywords for your site/page!"
-    elsif keywords.count > 15
-      raise RuntimeError, "Too many meta keywords! Should be between 10-15 terms. You have: #{keywords.count}"
+    raise 'You must provide meta keywords for your site/page!' if keywords.blank?
+
+    if keywords.count > 15
+      raise "Too many meta keywords! Should be between 10-15 terms. You have: #{keywords.count}"
     end
 
-    keywords.join(", ")
+    keywords.join(', ')
   end
 
   def meta_description
-   site_description = data.config.site.meta_description
-   page_description = data.page.meta_description
+    description = set_description
 
-    if page_description.nil? || page_description.empty?
-      description = site_description
-    else
-      description = page_description
+    raise 'You must provide a meta description for your site/page!' if description.blank?
+
+    if description.length > 160
+      description_too_long = 'Meta description too long!'
+      description_too_long << ' Should be between 150-160 characters.'
+      description_too_long << " You have: #{description.length}."
+      raise description_too_long
     end
+    description
+  end
 
-    if description.nil? || description.empty?
-      raise RuntimeError, "You must provide a meta description for your site/page!"
-    elsif description.length > 160
-      raise RuntimeError, "Meta description too long! Should be between 150-160 characters. You have: #{description.length}"
+  private
+
+  def set_meta_keywords
+    if data.page.meta_keywords.blank?
+      data.config.site.meta_keywords
     else
-      description
+      data.page.meta_keywords
+    end
+  end
+
+  def set_description
+    if data.page.meta_description.blank?
+      data.config.site.meta_description
+    else
+      data.page.meta_description
     end
   end
 end
