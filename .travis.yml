@@ -14,5 +14,6 @@ bundler_args: --jobs=3 --retry=3
 before_script:
   - npm install -g bower
   - bower install
+  - rubocop
 
 script: bundle exec middleman build --verbose
