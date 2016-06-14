@@ -16,5 +16,5 @@ before_script:
   - bower install
 
 script:
-  - rubocop -S -E
+  - bundle exec rubocop -S -E
   - bundle exec middleman build --verbose
