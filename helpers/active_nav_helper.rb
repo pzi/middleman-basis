@@ -15,19 +15,12 @@ module ActiveNavHelper
 
   def nav_active(url)
     if url.instance_of? String
-      if current_resource.url == url_for(url)
-        { class: active_navigation_item_class }
-      else
-        {}
-      end
+      return { class: active_navigation_item_class } if current_resource.url == url_for(url)
     elsif url.instance_of? Array
-      if url.map { |link| url_for(link) }.include?(current_resource.url)
-        { class: active_navigation_item_class }
-      else
-        {}
+      if url.map { |u| url_for(u) }.include?(current_resource.url)
+        return { class: active_navigation_item_class }
       end
-    else
-      {}
     end
+    {}
   end
 end
