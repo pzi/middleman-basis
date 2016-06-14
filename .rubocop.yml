@@ -13,3 +13,7 @@ Metrics/LineLength:
   URISchemes:
     - http
     - https
+
+Metrics/MethodLength:
+  CountComments: false  # count full line comments?
+  Max: 15
